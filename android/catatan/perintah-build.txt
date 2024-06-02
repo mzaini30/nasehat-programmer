@@ -1,1 +1,0 @@
-gradlew :app:assembleDebug :app:assembleDebugUnitTest :app:assembleDebugAndroidTest
