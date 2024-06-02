@@ -3,6 +3,7 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 import { preprocess } from "svelte/compiler";
 import { mdsvex } from "mdsvex";
 import legacy from "@vitejs/plugin-legacy";
+import yaml from "vite-plugin-yaml2";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,5 +17,6 @@ export default defineConfig({
     legacy({
       renderModernChunks: false,
     }),
+    yaml(),
   ],
 });
